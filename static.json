@@ -1,0 +1,8 @@
+{
+  "headers": {
+    "/*": {
+      "Access-Control-Allow-Origin": "*",
+      "X-Author": "mihailstar"
+    }
+  }
+}
