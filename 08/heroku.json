@@ -1,0 +1,17 @@
+{
+  "Settings": {
+    "Buildpacks": [
+      {
+        "url": "https://github.com/mxschmitt/heroku-playwright-buildpack.git"
+      },
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+      }
+    ],
+    "Config Vars": [
+      {
+        "PLAYWRIGHT_BUILDPACK_BROWSERS": "chromium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "finalhandler": "^1.1.0",
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0",
+    "@babel/node": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-typescript": "^7.12.0",
+    "@tsconfig/node12": "^1.0.0",
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.0",
+    "@types/finalhandler": "^1.1.0",
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^14.14.0",
+    "@types/node-fetch": "^2.5.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "browserslist": "^4.14.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.7.0",
+    "nodemon": "^2.0.0",
+    "prettier": "^2.1.0",
+    "typescript": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=13.0.0"
+  },
+  "name": "node-edu",
+  "private": true,
+  "scripts": {
+    "build": "npm run clear && babel ./src --extensions .ts --out-dir ./dist",
+    "clear": "rm ./dist --force --recursive",
+    "dev": "nodemon --exec babel-node ./src/index.ts --extensions .ts",
+    "postinstall": "npm run build",
+    "start": "node ./dist"
+  }
+}

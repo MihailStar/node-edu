@@ -1,0 +1,13 @@
+{
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/plain; charset=utf-8"
+    },
+    "/fetch/": {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/html; charset=utf-8"
+    }
+  },
+  "https_only": true
+}
